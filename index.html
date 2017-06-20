@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      $(document).ready(function() {
+        $('.myLink').on('click', function() {
+          $('h1').addClass('red');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Content Slider</h1>
+    <div class="container">
+      <img src="img/arrow-left.png" alt="prev" id="prev"/>
+      <div class="slides">
+
+        <div class="slide active">
+          <img src="img/slide1.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide2.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide3.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide4.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide5.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide6.jpg"/>
+        </div>
+
+        <div class="slide">
+          <img src="img/slide7.jpg"/>
+        </div>
+
+      </div>
+      <img src="img/arrow-right.png" alt="next" id="next">
+    </div>
+  </body>
+</html>

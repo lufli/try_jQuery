@@ -1,0 +1,35 @@
+.container {
+	width: 980px;
+	margin: 40px auto;
+	overflow: hidden;
+}
+
+.slides {
+	width:800px;
+	height:350px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 2px;
+	border-radius:5px;
+}
+
+.slide {
+	position:absolute;
+}
+
+#prev, #next {
+	float:left;
+	margin-top:130px;
+	position:relative;
+	z-index:1;
+}
+
+#prev {
+	margin-left:45px;
+}
+
+#next {
+	margin-right:-45px;
+}
